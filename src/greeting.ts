@@ -2,7 +2,7 @@ const GREET_TEXT = `
 ==========================
     TWITTER LIKE REACT
     
-Twitter like app written for educational purpose using react, flux and typescript.    
+Twitter like app written for educational purpose using react, redux and typescript.    
 ==========================    
 ` 
 

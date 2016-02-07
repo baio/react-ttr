@@ -11,14 +11,18 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   
   <script src="./node_modules/systemjs/dist/system.js"></script>
-
+  <script src="./node_modules/react/dist/react.js"></script>
+  <script src="./node_modules/react-dom/dist/react-dom.js"></script>
+  <script src="./node_modules/redux/dist/redux.js"></script>
+  <script src="./node_modules/es6-shim/es6-sham.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  
+  <div id="root">
+  </div>      
   <script>
   // set our baseURL reference path
   System.config({
