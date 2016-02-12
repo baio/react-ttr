@@ -1,9 +1,17 @@
-export {IAppState}  from "../app.types"
-export {CreateNew} from "./create-new"
-export {List} from "./list"
+import {IAppState}  from "../app.types"
+import {List} from "./list"
+import {CreateNew} from "./create-new"
 
-export const render = () =>   
+const App = ({state} : {state: IAppState}) => (
       <div>
-        <List></List>        
+        <List list={state.list}></List>
+        <CreateNew onClick={() => console.log("clicked")}></CreateNew>
       </div>
-
+)
+    
+export const render = (state: IAppState, store: Redux.Store) =>
+   ReactDOM.render(
+      <App state={state}></App>
+   , document.getElementById("root"))    
+    
+    

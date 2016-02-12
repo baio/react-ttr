@@ -1,19 +1,16 @@
 ///<reference path="..\node_modules\retyped-es6-shim-tsd-ambient\es6-shim.d.ts" />
 ///<reference path="..\node_modules\retyped-react-tsd-ambient\react-global.d.ts" />
 ///<reference path="..\node_modules\retyped-redux-tsd-ambient\redux.d.ts" />
+///<reference path="..\node_modules\retyped-react-redux-tsd-ambient\react-redux.d.ts" />
 
 
 import { greeting } from "./greeting"
 
-import { reducer } from "./list/reducer"
-import { createItem } from "./list/actions"
-
-import {fetchItemsAsync} from "./list/actions"
-import {render} from "./render"
+import {reducer} from "./reducers/app-reducer"
+import {fetchItemsAsync} from "./actions"
 import {thunkMiddleware} from "./thunkMiddleware"
 
-
-declare var document: Document;
+import {render} from "./components/app"
 
 greeting();
 
@@ -25,4 +22,4 @@ store.subscribe(() => render(store.getState(), store));
 
 render(store.getState(), store);
 
-store.dispatch(fetchItemsAsync());
+

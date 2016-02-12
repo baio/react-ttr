@@ -1,4 +1,8 @@
 import {IList} from "../app.types"
 
-export const List = (props : {list : IList, onClick : any}) =>
-    <div>{props.list.items.length}</div>
+//import {connect} from "react-redux"
+
+export const List = ({list} : {list : IList}) => ( 
+    <div>{list.items.length}</div>
+);
+    

@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "retyped-es6-shim-tsd-ambient": "^0.31.2-0",
+    "retyped-react-redux-tsd-ambient": "^2.1.2-0",
     "retyped-react-tsd-ambient": "^0.14.0-0",
     "retyped-redux-tsd-ambient": "^1.0.0-0"
   }
